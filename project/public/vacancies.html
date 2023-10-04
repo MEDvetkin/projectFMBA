@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<title>Вакансии</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C500%2C600"
+		/>
+		<link rel="stylesheet" href="styles/vacstyles.css" />
+
+		<style>
+			/* Define the initial state of the map container */
+			#map-container {
+				display: none;
+				width: 400px;
+				height: 300px;
+				background-color: lightgray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="item-16-9--A4X">
+			<div class="auto-group-4cpr-j19">
+				<div class="item--gU7">
+					<div class="logo-aJb">
+						<img class="logo-5WF" src="./assets/logo-WZd.png" />
+					</div>
+					<div class="frame-5-yLj">
+						<div class="item--Fp3">
+							<p class="item--KZ1">О нас</p>
+							<p class="item--TBM">Работа в ФНКЦ</p>
+							<p class="item--KDZ">Мы ищем</p>
+							<p class="item--CYF">Студентам</p>
+							<p class="item--gTR">Новости</p>
+							<p class="item--ySX">Контакты</p>
+						</div>
+						<div class="frame-5-rmD">
+							<div class="item--Qnj">Вакансии</div>
+							<div class="item--c87">Отправить резюме</div>
+						</div>
+					</div>
+				</div>
+				<div class="auto-group-svxh-R5Z">
+					<div class="frame-33-Kgj">
+						<div class="frame-23-EYo">
+							<p class="label-PRh">Адрес</p>
+							<div class="input-hxB">
+								<div class="placeholder-right-icon-cpF">
+									<p class="label-ZUb">Красноярск</p>
+									<img class="group-1-h51" src="./assets/group-1.png" />
+								</div>
+							</div>
+							<div class="item--yoD">
+								<div class="auto-group-kivb-7Pd">
+									<div class="frame-14-1zo">
+										<div class="item--YUw">
+											<div class="rectangle-17-qiw"></div>
+										</div>
+										<p class="label-9jd">Коломенская улица, 26 к4</p>
+									</div>
+									<div class="frame-15-HL3">
+										<div class="item--QvT">
+											<div class="rectangle-17-7Zy"></div>
+										</div>
+										<p class="label-CbR">ул. Вавилова, 29</p>
+									</div>
+									<div class="frame-16-8jy">
+										<div class="item--sSf">
+											<div class="rectangle-17-xyu"></div>
+										</div>
+										<p class="label-sLB">Карла Маркса, 34Б</p>
+									</div>
+									<div class="frame-17-yu1">
+										<div class="item--h4K">
+											<div class="rectangle-17-MPm"></div>
+										</div>
+										<p class="label-3XV">Бограда, 13</p>
+									</div>
+									<div class="frame-18-aXR">
+										<div class="item--6kf">
+											<div class="rectangle-17-nNb"></div>
+										</div>
+										<p class="label-H4T">Биатлонная улица, 25Б</p>
+									</div>
+									<div class="frame-19-zjZ">
+										<div class="item--hP5">
+											<div class="rectangle-17-bDZ"></div>
+										</div>
+										<p class="label-pVd">Академика Вавилова, 23Б</p>
+									</div>
+								</div>
+								<div class="frame-20-9Xu">
+									<div class="item--syh">
+										<div class="rectangle-17-Mdy"></div>
+									</div>
+									<p class="label-ssD">1-я Смоленская улица, 16с10</p>
+								</div>
+								<div class="frame-21-cpo">
+									<div class="item--ZEF">
+										<div class="rectangle-17-g3y"></div>
+									</div>
+									<p class="label-1M9">1-я Смоленская улица, 16с11</p>
+								</div>
+							</div>
+						</div>
+						<div class="auto-group-x5ap-vyu">
+							<div class="frame-24-Tyq">
+								<p class="label-2GF">Образование</p>
+								<div class="item--kCF">
+									<div class="frame-14-gLo">
+										<img class="item--phu" src="./assets/-su9.png" />
+										<p class="label-jK5">Высшее медицинское</p>
+									</div>
+									<div class="frame-15-4s9">
+										<img class="item--2Z5" src="./assets/-szf.png" />
+										<p class="label-M5Z">Среднее специальное</p>
+									</div>
+									<div class="frame-16-tLP">
+										<img class="item--R5R" src="./assets/-bo5.png" />
+										<p class="label-7yq">Среднее общее</p>
+									</div>
+								</div>
+							</div>
+							<div class="frame-25-FaF">
+								<p class="label-bu1">Опыт работы</p>
+								<div class="item--YJT">
+									<div class="frame-16-g9m">
+										<img class="item--2UX" src="./assets/-vVD.png" />
+										<p class="label-wrP">Без опыта</p>
+									</div>
+									<div class="frame-14-5xb">
+										<img class="item--3eX" src="./assets/-C79.png" />
+										<p class="label-NRu">С 1 года до 3 лет</p>
+									</div>
+									<div class="frame-15-Wo1">
+										<img class="item--4pX" src="./assets/-RXu.png" />
+										<p class="label-o1R">От 3 лет</p>
+									</div>
+								</div>
+							</div>
+							<div class="item--Xi7">
+								<div class="item--Fu1">Применить</div>
+								<div class="frame-26-5NF">
+									<img class="group-5-zEK" src="./assets/group-5.png" />
+									<p class="item--KXV">Сбросить</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="auto-group-uzgf-dHH">
+						<div class="item--yc3">
+							<div class="item--UYo">Списком</div>
+							<div class="item--7rf">
+								<button onclick="showMap()">На карте</button>
+								<script>
+									function showMap() {
+										var map = new google.maps.Map(
+											document.getElementById('map'),
+											{
+												center: { lat: -34.397, lng: 150.644 },
+												zoom: 8,
+											}
+										)
+									}
+								</script>
+								<script
+									async
+									defer
+									src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+								></script>
+							</div>
+						</div>
+						<div class="frame-13-LzK">
+							<div class="item--h4B">
+								<div class="auto-group-kjw9-14s">
+									<div class="item--kYF">
+										<div class="item-1-SR5">
+											<div class="frame-1-AM5">
+												<p class="item--Wvj">Медицинская сестра</p>
+												<p class="item-35-000-45-500--bhH">35 000 — 45 500 ₽</p>
+											</div>
+											<div class="group-1-twH">
+												<div class="frame-2-4Ky">
+													<img class="item--P7M" src="./assets/-UM5.png" />
+													<p class="item-1-3--VRH">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-LB1">
+													<img class="geo-5PV" src="./assets/geo.png" />
+													<div class="item-23--CU7">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item--roZ">
+										<div class="item-1-9Gs">
+											<div class="frame-1-fW7">
+												<p class="item--25m">Врач-терапевт</p>
+												<p class="item-35-000-45-500--hxb">65 000 — 75 500 ₽</p>
+											</div>
+											<div class="group-1-Rtb">
+												<div class="frame-2-zgo">
+													<img class="item--Kyy" src="./assets/-d27.png" />
+													<p class="item-1-3--qhR">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-KMh">
+													<img class="geo-GGw" src="./assets/geo-hu9.png" />
+													<div class="item-23--nm5">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="auto-group-xxhr-rW3">
+									<div class="item--oRH">
+										<div class="item-1-svw">
+											<div class="frame-1-zkf">
+												<p class="item--M5R">Ассистет акушера</p>
+												<p class="item-35-000-45-500--SsZ">35 000 — 45 500 ₽</p>
+											</div>
+											<div class="group-1-mew">
+												<div class="frame-2-w3d">
+													<img class="item--fEX" src="./assets/-7HH.png" />
+													<p class="item-1-3--yFD">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-f83">
+													<img class="geo-oEF" src="./assets/geo-HWo.png" />
+													<div class="item-23--81d">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item--auD">
+										<div class="item-1-Ti7">
+											<div class="frame-1-myh">
+												<p class="item--Xhy">Медицинская сестра</p>
+												<p class="item-35-000-45-500--dFD">35 000 — 45 500 ₽</p>
+											</div>
+											<div class="group-1-wWo">
+												<div class="frame-2-hks">
+													<img class="item--3Jw" src="./assets/-p9u.png" />
+													<p class="item-1-3--wv7">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-dnw">
+													<img class="geo-nA3" src="./assets/geo-yJP.png" />
+													<div class="item-23--tym">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="auto-group-v84w-Z4K">
+									<div class="item--5YT">
+										<div class="item-1-ZTd">
+											<div class="frame-1-5wm">
+												<p class="item--E3y">Врач-терапевт</p>
+												<p class="item-35-000-45-500--7dZ">65 000 — 75 500 ₽</p>
+											</div>
+											<div class="group-1-dro">
+												<div class="frame-2-CQ7">
+													<img class="item--8Hm" src="./assets/-z95.png" />
+													<p class="item-1-3--Erb">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-8BH">
+													<img class="geo-s8s" src="./assets/geo-hAw.png" />
+													<div class="item-23--yxb">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item--EtX">
+										<div class="item-1-i31">
+											<div class="frame-1-dfm">
+												<p class="item--zWK">Медицинская сестра</p>
+												<p class="item-35-000-45-500--tbh">35 000 — 45 500 ₽</p>
+											</div>
+											<div class="group-1-cnb">
+												<div class="frame-2-P2f">
+													<img class="item--i4w" src="./assets/-kT9.png" />
+													<p class="item-1-3--dBu">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-KKd">
+													<img class="geo-s6F" src="./assets/geo-jMq.png" />
+													<div class="item-23--Bsd">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="auto-group-wl4x-qhH">
+									<div class="item--PTu">
+										<div class="item-1-UVM">
+											<div class="frame-1-cLf">
+												<p class="item--mjM">Врач-терапевт</p>
+												<p class="item-35-000-45-500--UNs">65 000 — 75 500 ₽</p>
+											</div>
+											<div class="group-1-69M">
+												<div class="frame-2-Sj1">
+													<img class="item--Auu" src="./assets/.png" />
+													<p class="item-1-3--t5D">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-yMZ">
+													<img class="geo-ipw" src="./assets/geo-tY7.png" />
+													<div class="item-23--2Kq">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item--VDR">
+										<div class="item-1-yuH">
+											<div class="frame-1-uH9">
+												<p class="item--T3m">Медицинская сестра</p>
+												<p class="item-35-000-45-500--YL7">35 000 — 45 500 ₽</p>
+											</div>
+											<div class="group-1-rLo">
+												<div class="frame-2-QdD">
+													<img class="item--jQb" src="./assets/-tDm.png" />
+													<p class="item-1-3--Es9">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-i1d">
+													<img class="geo-3Zh" src="./assets/geo-2ym.png" />
+													<div class="item-23--kyu">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="auto-group-vdgj-Cqu">
+									<div class="item--kcX">
+										<div class="item-1-2pw">
+											<div class="frame-1-xTh">
+												<p class="item--WEK">Врач-терапевт</p>
+												<p class="item-35-000-45-500--Pou">65 000 — 75 500 ₽</p>
+											</div>
+											<div class="group-1-i5V">
+												<div class="frame-2-rxP">
+													<img class="item--n5M" src="./assets/-dy9.png" />
+													<p class="item-1-3--663">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-mxs">
+													<img class="geo-v55" src="./assets/geo-pyV.png" />
+													<div class="item-23--EbZ">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item--hEF">
+										<div class="item-1-MZh">
+											<div class="frame-1-s2F">
+												<p class="item--D67">Врач-терапевт</p>
+												<p class="item-35-000-45-500--J7Z">65 000 — 75 500 ₽</p>
+											</div>
+											<div class="group-1-cP9">
+												<div class="frame-2-AfZ">
+													<img class="item--fMR" src="./assets/-Q55.png" />
+													<p class="item-1-3--Mzw">
+														Опыт работы от 1 года до 3 лет
+													</p>
+												</div>
+												<div class="frame-2-eDM">
+													<img class="geo-zHD" src="./assets/geo-25d.png" />
+													<div class="item-23--Joh">
+														ул. Академика Вавилова, д. 23 Б
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="frame-7-ZDq">
+								<img class="item--sVR" src="./assets/-NHu.png" />
+								<p class="item-1-Nwy">1</p>
+								<p class="item-2-Vmh">2</p>
+								<p class="item-3-q4s">3</p>
+								<img class="frame-6-NKh" src="./assets/frame-6.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="item--grB">Вакансии</p>
+				<div class="item--x31">
+					<div class="frame-22-34T">
+						<p class="item--b5y">Кардиолог</p>
+						<img class="item--h91" src="./assets/-VBu.png" />
+					</div>
+				</div>
+			</div>
+			<div class="group-4-aTh">
+				<div class="auto-group-n3yk-Vaf">
+					<div class="logo-QxX">
+						<img class="logo-L5V" src="./assets/logo.png" />
+					</div>
+					<div class="frame-30-FTM">
+						<p class="item--Nns">Контакты</p>
+						<div class="frame-7-VMh">
+							<div class="item--E4P">suhorukova_oa@skc-fmba.ru</div>
+							<div class="frame-3-qZy">
+								<div class="item--PLb">280 02 02</div>
+								<p class="item--dEw">Общий контактый номер</p>
+							</div>
+						</div>
+					</div>
+					<div class="item--hEo">
+						<p class="item--RwV">Адрес</p>
+						<p class="item-26-660037-6213-Z27">
+							Коломенская, 26, Красноярск, Красноярский край, 660037 , а/я 6213
+						</p>
+					</div>
+				</div>
+				<img class="vector-2-YPq" src="REPLACE_IMAGE:I1:205;3:1429" />
+				<div class="auto-group-zeo1-47H">
+					<p class="item-2003-2023--Ntf">
+						<span class="item-2003-2023--Ntf-sub-0"
+							>2003 - 2023 © Федеральное государственное бюджетное
+							учреждениеФГБУ ФСНКЦ ФМБА России</span
+						>
+						<span class="item-2003-2023--Ntf-sub-1">
+							<br />
+						</span>
+						<span class="item-2003-2023--Ntf-sub-2"
+							>Политика информационной безопасности персональных данных</span
+						>
+					</p>
+					<div class="item--2Qo">Задавать вопрос</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
